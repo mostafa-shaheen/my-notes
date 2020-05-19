@@ -1,6 +1,9 @@
 #replace printing
+import time
 for t in range(100):
-  print('time step: ',t,'\r', end="")
+  print('step:',t,end='')
+  time.sleep(1)#whatever is hapenning here
+  print('\r',end='')
 #or use std.out.flush  
 =============================================================================== 
 #print numby array with rounded values
