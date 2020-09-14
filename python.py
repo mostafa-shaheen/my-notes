@@ -17,3 +17,8 @@ import os
 os.environ['KAGGLE_USERNAME'] = "mostafa77" # username from the json file
 os.environ['KAGGLE_KEY'] = "347368f5c64dba7e88eaa79d996db0ec" # key from the json file
 !kaggle competitions download favorita-grocery-sales-forecasting -f test.csv.7z
+=================================================================================
+# display multiple dataframes in loop
+from IPython.display import display
+for i in df_list:
+    display(i)
