@@ -26,3 +26,10 @@ for i in df_list:
 # get the path from where a package was imported
 import package_name
 print(package_name.__file__)
+================================================================================
+#  import from parent directory by adding it's path 
+import sys, os, inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+================================================================================
