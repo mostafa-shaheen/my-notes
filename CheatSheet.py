@@ -33,6 +33,9 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 ================================================================================
+# auto reload, no need for restarting kernel
+%load_ext autoreload
+%autoreload 2
 # know python version you'r working with
 from platform import python_version
 print(python_version())
