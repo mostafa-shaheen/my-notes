@@ -31,6 +31,17 @@ sys.path.insert(0, parentdir)
 # auto reload, no need for restarting kernel
 %load_ext autoreload
 %autoreload 2
+================================================================================
 # know python version you'r working with
 from platform import python_version
 print(python_version())
+================================================================================
+# check system path where python imports from 
+import sys
+print(sys.path)
+#insert path with the first priority, (checked at first)
+sys.path.insert(0, any_path)
+#insert path with the least priority, (checked at last)
+sys.path.append(any_path)
+================================================================================
+
