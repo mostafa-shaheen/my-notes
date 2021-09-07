@@ -44,4 +44,5 @@ sys.path.insert(0, any_path)
 #insert path with the least priority, (checked at last)
 sys.path.append(any_path)
 ================================================================================
-
+#Autocomplete (with hinterland) in Jupyter notebook not working
+%config Completer.use_jedi = False
